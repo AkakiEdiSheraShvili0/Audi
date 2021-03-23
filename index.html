@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUDI</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <nav class="container ">
+        <div class="nav-container ">
+            <div class="row  d-flex align-items-center justify-content-between justify-content-xl-start ">
+                <div class="brend col-4 col-sm-4 ">
+                    <a href="#" class="navbar-brend">Audi.</a>
+                </div>
+                <div class="nav col-sm-6 d-none d-xl-block ">
+                    <div class="menu-close  d-xl-none">
+                        <img src="img/close-icon.png" alt="" class="">
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#">Company</a>
+                        </li>
+                        <li>
+                            <a href="#">Career</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search_btn col-4 col-sm-3 col-xl-2">
+                    <button class="btn btn--search">
+                        <span class="d-none d-xl-block">Search</span>
+                        <img src="img/search.svg" alt="" class="d-block d-xl-none">
+                    </button>
+                </div>
+                <div class="col-4 col-sm-4 d-flex justify-content-end d-xl-none">
+                    <div class="menu-burger">
+                        <img src="img/open-menu.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <main class="container main-container">
+        <div class="main-items row">
+            <div class="d-block col-sm-12 col-md-4">
+                <div class="comunity">
+                    <img src="img/123.png">
+                    <span>Audi Comunity</span>
+                </div>
+                <div class="sign-up-form d-none d-xl-block">
+                    <img src="img/user.png" class="avatar">
+                    <h1>Sign Up Now</h1>
+                    <form>
+                        <input type="email" class="input-box" placeholder="Your Email">
+                        <input type="password" class="input-box" placeholder="Your Password">
+                        <p><span><input type="checkbox" class="checkbox"></span>I agree to the terms of sevices</p>
+                        <button type="button" class="signup-btn">Sign up</button>
+
+                        <p class="or">OR</p>
+                        <button type="button" class="google-btn">Login with google</button>
+                        <p>Do you have an account?<a href="#">Sign in</a></p>
+                    </form>
+                </div>
+                <div class="contact">
+                    <p>TEL: 987 456 456</p>
+                    <p>Email: audiaudi@audi.com</p>
+                </div>
+            </div>
+            <div class="d-block col-sm-12 col-md-8 ">
+                <div class="about-audi">
+                    <div class="about-audi-contet">
+                        <h3>The world of Audi</h3>
+                        <span>
+                            yvelaferi audize The world of AudiThe world of Audi
+                            The world of AudiThe world of AudiThe world of Audi
+                            The world of AudiThe world of AudiThe world of Audi
+                        </span>
+                    </div>
+                    <button class="btn">Show more</button>
+                </div>
+                <div class="dev ">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="feature">
+                                <h4>Featured</h4>
+                                <div class="develop">
+                                    <img src="img/develop-icon.png">
+                                    <span>
+                                        The world of AudiThe world of
+                                        AudiThe world of Audi
+                                        The world of AudiThe world of
+                                    </span>
+                                </div>
+                                <div class="support">
+                                    <img src="img/suuport-icon.png">
+                                    <span>
+                                        The world of AudiThe world of
+                                        AudiThe world of Audi
+                                        The world of AudiThe world of
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="welcome">
+                                <img src="img/avatar.png" alt="">
+                                <div class="welcome-content">
+                                    <h4>Welcome</h4>
+                                    <span>
+                                        The world of AudiThe world of
+                                        AudiThe world of Audi
+                                        The world of AudiThe
+                                    </span>
+                                    <button class="profile-btn btn ">My Profile</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script>
+        $(".menu-burger").click(function() {
+            console.log("traki");
+            $(".nav-container .nav").addClass("nav--open")
+
+        })
+        $(".menu-close").click(function() {
+            $(".nav-container .nav").removeClass("nav--open")
+        })
+    </script>
+</body>
+</html>
